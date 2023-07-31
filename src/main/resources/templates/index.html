@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!--라이브러리 참조 : Thymeleaf & Thymeleaf Layout -->
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <!--공통 JS / CSS 영역을 관리하는 환경 영역-->
+    <head th:replace="/common/config :: ConfigFragment">
+        <title layout:title-pattern="$LAYOUT_TITLE : $CONTENT_TITLE"></title>
+    </head>
+
+    <body>
+       <h1>1</h1>
+    </body>
+</html>
