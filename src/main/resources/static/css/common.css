@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+#headerWrap .header {
+    width: 70%;
+    margin: 0 auto;
+}
+#headerWrap .header .logo {
+    font-weight: 800;
+    float: left;
+}
+#headerWrap .header .menubar {
+    font-weight: 500;
+    float: right;
+    list-style: none;
+}
+#headerWrap .header .menubar li {
+    float: left;
+    padding-right: 10px;
+}
+.clear {
+    clear: both;
+}
