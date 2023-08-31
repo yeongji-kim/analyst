@@ -1,5 +1,13 @@
 body {
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
 }
 #headerWrap .header {
     width: 70%;
@@ -10,14 +18,33 @@ body {
     float: left;
 }
 #headerWrap .header .menubar {
-    font-weight: 500;
+    font-weight: 450;
     float: right;
-    list-style: none;
 }
 #headerWrap .header .menubar li {
     float: left;
     padding-right: 10px;
+    line-height: 26px;
 }
+
+#headerWrap .header .menubar li.signUp {
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 9px;
+}
+#headerWrap .header .menubar li.signUp:hover {
+    background-color: black;
+}
+#headerWrap .header .menubar li.signUp a:hover {
+    color: white;
+}
+#headerWrap .header .menubar li.github {
+    width: 35px;
+    height: 35px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
 .clear {
     clear: both;
 }

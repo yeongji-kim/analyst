@@ -3,6 +3,8 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/common/layout}"
+      layout:fragment="Content"
 >
 	<head>
 	    <title>회원가입 페이지 </title>
@@ -25,11 +27,25 @@
 	</head>
 
 	<body>
-		<div class="leftContent">
-			<h1>Cont2ent 영역입니다.</h1>
-		</div>
-        <div class="rightContent">
-			<h1>Cont2ent 영역입니다.</h1>
+		<div id="signUpContent">
+			<h2>SignUp</h2>
+			<form name="signUp" id="signUp" method="post" action="/member/signUp">
+				<label for="memberId">아이디</label>
+				<input type="text" id="memberId" name="memberId" />
+				<input type="button" value="중복체크" />
+				<p class="">* 사용가능한 아이디 입니다.</p>
+				<label for="memberPw">비밀번호</label>
+				<input type="password" id="memberPw" name="memberPw" />
+				<p class="">* 사용가능한 비밀번호 입니다.</p>
+				<label for="memberRePw">비밀번호 확인</label>
+				<input type="password" id="memberRePw" name="memberRePw" />
+				<p class="">* 사용가능한 비밀번호 입니다.</p>
+				<label for="memberEmail">이메일</label>
+				<input type="email" id="memberEmail" name="memberEmail" />
+				<input type="button" value="중복체크" />
+				<p class="">* 사용가능한 이메일 입니다.</p>
+				<input type="submit" value="확인" />
+			</form>
 		</div>
 	</body>
 </html>
